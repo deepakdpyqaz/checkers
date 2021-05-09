@@ -1,0 +1,106 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+body{   
+    background-color: #3423A6;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+
+/* style for the message box  */
+.message_wrapper{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    z-index: 2;
+}
+.message{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 2px black;
+    width: 90vw;
+    height: 60vh;
+    min-width: 250px;
+    min-height: 250px;
+    max-width: 650px;
+    max-height: 500px;
+    display: grid;
+    grid-template-rows: 6fr 1fr;
+}
+.text{
+    font-family:'Times New Roman', Times, serif;
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn_wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+}
+.message_btn{
+    outline: none;
+    border: none;
+    background-color: #2E1760;
+    font-size: 30px;
+    padding: 5px 20px;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    box-shadow: 0px 0px 5px 1px black;
+}
+.message_btn:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px black;
+}
+
+
+/* style for board  */
+
+.board{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 80vmin;
+    height: 80vmin;
+    background: white;
+    box-shadow: 0px 0px 10px 4px black;
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(5,1fr);
+}
+
+.grids{
+    position: relative;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.grids:hover{
+    box-shadow: 0px 0px 4px 1px black;
+    cursor: pointer;
+}
+.checker{
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    border: 1px solid black;
+}
+.checker.pink{
+    background-color: #F44174;
+}
+.checker.purple{
+    background-color: #4C1E4F;
+}
